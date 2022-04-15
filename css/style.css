@@ -16,7 +16,6 @@ h1 {
   left: 60px;
   color: #fff;
   font-size: 26px;
-
 }
 .navbar {
   position: absolute;
@@ -48,12 +47,13 @@ display: inline-block;
 iframe {
   width: 100%;
   height: 300px;
+  margin-top: 10px;
 }
 h2 {
   font-size: 18px;
   color:  #0000e6;
   font-weight: 200;
-  margin-top: 30px;
+  margin-top: 10px;
 }
 .container1 p{
   width: 200px;
@@ -63,6 +63,8 @@ h2 {
   margin-bottom: 10px;
 }
 .box{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 textarea {
@@ -70,14 +72,20 @@ textarea {
   resize: none;
   color: #808080;
   background-color: #e6e6e6;
-  box-shadow: 3px 3px 5px#e6e6e6;
+  -webkit-box-shadow: 3px 3px 5px#e6e6e6;
+          box-shadow: 3px 3px 5px#e6e6e6;
   border-style: none;
   margin-right: 10px;
 }
 .box2 {
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 input {
   width: 100%;
@@ -93,14 +101,23 @@ button {
   color: #e6e6e6;
 }
 .box3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 30px;
 }
 .circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -116,4 +133,29 @@ button {
 h3, .smallbox p{
   text-align: center;
   margin-top: 10px;
+}
+
+@media (max-width: 390px){
+  .box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .box2 {
+    width: 100%;
+  }
+  .box3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .smallbox {
+    margin-bottom: 10px;
+  }
 }

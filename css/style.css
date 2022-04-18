@@ -72,9 +72,9 @@ textarea {
   resize: none;
   color: #808080;
   background-color: #e6e6e6;
+  border: solid 1px #808080;
   -webkit-box-shadow: 3px 3px 5px#e6e6e6;
           box-shadow: 3px 3px 5px#e6e6e6;
-  border-style: none;
   margin-right: 10px;
 }
 .box2 {
@@ -92,7 +92,7 @@ input {
   height: 30px;
   margin-bottom: 10px;
   background-color: #e6e6e6;
-  border-style: none;
+  border: solid 1px #808080;
   }
 button {
   height: 30px;
